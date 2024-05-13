@@ -25,7 +25,7 @@ const config = {
 async function main() {
   try {
     // Initialize the web scraper with the given configuration.
-    const scraper = new WebScraper(config, 3);
+    const scraper = new WebScraper(config);
     await scraper.initialize();
 
     // Start the data scraping process.
