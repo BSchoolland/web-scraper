@@ -55,3 +55,11 @@ Each selector object may contain the following properties.
 - `scrapeData()`: Initiates the scraping process from the root page and recursively from all navigable child pages.
 - `queryPage(SelectorId)`: Retrieves data for a specific type of page.
 - `close()`: Closes the browser to free resources.
+
+## Contributing
+
+This project is far from complete and I would appreciate any contributions or feedback.  Please feel free to open an issue or submit a pull request!  
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
