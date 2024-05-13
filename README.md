@@ -1,5 +1,5 @@
 
-# WebScraper Documentation
+# web-scraper
 
 ## Overview
 
@@ -14,7 +14,7 @@ To run this repository, you will need to have Node.js installed on your machine.
 After installing Node.js, you can clone this repository and install the dependencies by running the following commands:
 
 ```bash
-git clone 
+git clone https://github.com/BSchoolland/web-scraper.git
 cd web-scraper
 npm install
 ```
@@ -30,7 +30,7 @@ node app.mjs
 This will launch the scraper and extract data from example.com. The extracted data will be logged to the console.
 
 ### Configuration
- Optionally, you can use the [web scraper chrome extension](https://chromewebstore.google.com/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn?hl=en) to automatically generate the configuration object for a given website.  The extension will generate a JSON object that can be copied and pasted into the program.
+ Optionally, you can use the [web scraper chrome extension](https://chromewebstore.google.com/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn?hl=en) to automatically generate the configuration object for a given website.  The extension allows you to create a JSON sitemap object that works with this scraper as the config.
 
 `WebScraper` requires a configuration object to define the start URL and the selectors used for scraping:
 
@@ -51,7 +51,7 @@ Each selector object may contain the following properties.
 
 ### Methods
 
-- `initialize()`: Prepares the scraper by launching a browser and opening the root page.  Optionally you can pass in a browser instance to use instead of the default stealth browser.
+- `initialize()`: Prepares the scraper by launching a browser and opening the root page. 
 - `scrapeData()`: Initiates the scraping process from the root page and recursively from all navigable child pages.
-- `queryPage(SelectorId)`: Retrieves data for a specific selector ID.
+- `queryPage(SelectorId)`: Retrieves data for a specific type of page.
 - `close()`: Closes the browser to free resources.
