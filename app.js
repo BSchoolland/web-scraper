@@ -1,4 +1,4 @@
-import WebScraper from "./webScraper.mjs";
+import WebScraper from "./webScraper.js";
 // Configuration for the web scraper specifying the start URL and the selectors to be used.
 const config = {
   _id: "example_com_sitemap",
